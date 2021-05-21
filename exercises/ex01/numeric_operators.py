@@ -10,7 +10,7 @@ print("Left-hand side" ": " + Left_hand_side)
 print("Right-hand side" ": " + Right_hand_side)
 Exponentiation: int = Left_hand_side_int ** Right_hand_side_int
 print(str(Left_hand_side) + " ** " + str(Right_hand_side) + " is " + str(Exponentiation))
-Division: int = Left_hand_side_int / Right_hand_side_int
+Division: float = Left_hand_side_int / Right_hand_side_int
 print(str(Left_hand_side) + " / " + str(Right_hand_side) + " is " + str(Division))
 Integer_Divison: int = Left_hand_side_int // Right_hand_side_int
 print(str(Left_hand_side) + " // " + str(Right_hand_side) + " is " + str(Integer_Divison))
