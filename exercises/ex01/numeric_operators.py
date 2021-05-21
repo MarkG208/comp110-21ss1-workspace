@@ -8,11 +8,11 @@ Left_hand_side_int: int = int(Left_hand_side)
 Right_hand_side_int: int = int(Right_hand_side)
 print("Left-hand side: ") + Left_hand_side
 print("Right-hand side: ") + Right_hand_side
-Exponentiation: int = Left_hand_side_int ** Right_hand_side_int
+Exponentiation : int = Left_hand_side_int ** Right_hand_side_int
 print(str(Left_hand_side) + " ** " + str(Right_hand_side) + " is " + str(Exponentiation))
-Division: int = Left_hand_side_int / Right_hand_side_int
+Division : int = Left_hand_side_int / Right_hand_side_int
 print(str(Left_hand_side) + " / " + str(Right_hand_side) + " is " + str(Division))
-Integer_Divison: int = Left_hand_side_int // Right_hand_side_int
+Integer_Divison : int = Left_hand_side_int // Right_hand_side_int
 print(str(Left_hand_side) + " // " + str(Right_hand_side) + " is " + str(Integer_Divison))
-Remainder: int = Left_hand_side_int % Right_hand_side_int
+Remainder : int = Left_hand_side_int % Right_hand_side_int
 print(str(Left_hand_side) + " % " + str(Right_hand_side) + " is " + str(Remainder))
