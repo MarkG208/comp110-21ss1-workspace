@@ -12,7 +12,7 @@ __author__ = "730399808"
 from random import randint
 
 print("Your fortune cookie says...")
-Fortune_Cookie: int = int(randint(1, 3))
+Fortune_Cookie: int = int(randint(1, 4))
 
 if Fortune_Cookie == 1:
     print("The road to success and glory is intimidating yet fulfilling at the end.")
@@ -23,6 +23,9 @@ else:
         if Fortune_Cookie == 3:
             print("Waiting for you later, is a pleasant surprise.")
         else:
-            print("Tomorrow will be a better day. And if not, there's another tomorrow to experience")
+            if Fortune_Cookie == 4:
+                print("Tomorrow will be a better day. And if not, there's another tomorrow to experience.")
+            else:
+                print("Happiness isn't something that is meant to be pursued but rather created.")
 
 print("Now, go spread positive vibes!")
