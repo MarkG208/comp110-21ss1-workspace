@@ -28,12 +28,12 @@ Target_Percent_int: float = int(Target_Percent) / 100
 current_percentage: float = (Doses_Administered_int) / (Population_int * 2)
 Percentage_to_go: float = Target_Percent_int - current_percentage
 Vaccines_needed: int = round(Percentage_to_go * Population_int * 2)
-Days_to_go: int = round(Vaccines_needed / Doses_Per_Day_int)
-Duration: timedelta = timedelta(Days_to_go)
-Final_date: datetime = datetime.today() + Duration
+Days_Left: str = round(Vaccines_needed / Doses_Per_Day_int)
+Duration: timedelta = timedelta(Days_Left)
+Date: datetime = datetime.today() + Duration
 print("Population: " + Population)
 print("Doses administered: " + Doses_Administered)
 print("Doses per day: " + Doses_Per_Day)
 print("Target percent vaccinated: " + Target_Percent)
 today: datetime = datetime.today()
-print("We will reach " + str(Target_Percent) + "% vaccination in " + str(Days_to_go) + " days, which falls on" + Final_date.strftime(" %B %d, %Y."))
+print("We will reach " + str(Target_Percent) + "% vaccination in " + str(Days_Left) + " days, which falls on" + Date.strftime(" %B %d, %Y."))
