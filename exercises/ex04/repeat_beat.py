@@ -9,15 +9,10 @@ Result: str = ""
 
 Repeat: int = 0
 while Repeat < Number_of_Repeats:
-  Result += Beat_Repeated + " "
-  Repeat += 1
+    Result += Beat_Repeated + " "
+    Repeat += 1
 else:
   if Repeat <= 0:
-    Result = ("No beats...")
+    Result = ("No beat...")
 
 print(Result)
-
- 
-
-
-
