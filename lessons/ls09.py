@@ -7,4 +7,10 @@ def my_max(a: int, b: int) -> int:
     else:
         return b
 
-print(my_max (5,8))
+def main() -> None:
+    """Entrypoint of a program."""
+    print(my_max(10,15))
+
+if __name__ == "__main__":
+    main()
+
